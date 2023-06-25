@@ -50,8 +50,8 @@ echo Today is \`date\`|	Displays Today is Sat May 13 16:34:29 UTC 2023
 cal 1 2030; cal 2 2030; cal 3 2030|	Displays Jan, Feb, March months Calendars of 2030
 ls /etc/ppp && echo success |	Lists the directory and prints success if the directory exists
 ls /etc/junk && echo success |	Lists the directory and prints success if the directory exists. If not error will be thrown
-ls /etc/ppp || echo failed |	Lists the directory or prints failed
-ls /etc/junk || echo failed |	Lists the directory or prints failed. If the directory does not exist then failed will be printed
+ls /etc/ppp \|\| echo failed |	Lists the directory or prints failed
+ls /etc/junk \|\| echo failed |	Lists the directory or prints failed. If the directory does not exist then failed will be printed
 ls|	Lists the files and directories
 ls -l |	Lists the files with size, date and permissions
 ls -l /tmp|	Lists the attributes of files and directories of /tmp
