@@ -1,6 +1,5 @@
 Commands | Description
  --- | --- 	
- 1 | Command Line Skills
 ls |	Lists all the files and directories in current directory
 ls /etc/ppp /etc/ssh |	The ls command also accepts multiple arguments. To list the contents of both the /etc/ppp and /etc/ssh directories, pass them both as arguments
 ls /etc/ppp |	List the files and directories from /etc/ppp
