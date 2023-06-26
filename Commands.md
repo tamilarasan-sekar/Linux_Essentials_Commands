@@ -1,5 +1,6 @@
 Commands | Description
  --- | --- 	
+ 1 | Command Line Skills
 ls |	Lists all the files and directories in current directory
 ls /etc/ppp /etc/ssh |	The ls command also accepts multiple arguments. To list the contents of both the /etc/ppp and /etc/ssh directories, pass them both as arguments
 ls /etc/ppp |	List the files and directories from /etc/ppp
@@ -93,6 +94,7 @@ echo Start && echo Going && echo Gone|	Displays Start Going Gone on each line. B
 echo Success && false && echo Bye|	Displays Success.The first echo command succeeds and we see its output. The false command executes with a failure result, so the last echo statement is not executed
 false \|\| echo Fail Or|	Displays Fail Or
 true \|\| echo Nothing to see here|	Displays(nothing)
+&nbsp; | &nbsp;
 man ls |	Displays the manual page for ls command
 man man |	Displays man page about man
 man passwd |	Displays under which section the command was found
