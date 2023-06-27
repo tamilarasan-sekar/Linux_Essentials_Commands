@@ -187,6 +187,7 @@ ls -R /etc/udev |	Recursively lists the files from all the subdirectories
 ls -d /etc/s* |	Lists all the directories that starts with s under /etc. * character can match "zero or more of any characters" in a filename. Note that the -d option prevents files from subdirectories from being displayed. It should always be used with the ls command when you are using file globbing
 ls -d /etc/???? |	Displays all of the files in the /etc directory that are exactly four characters long.The ? character can be used to match exactly 1 character in a file name
 ls –d /etc/[abcd]* |	Displays all the directories that starts with letter a/b/c/d. By using square brackets [ ] you can specify a single character to match from a set of characters
+&nbsp; | &nbsp;
 echo /etc/t* |	Displays all the files that starts with t
 echo /etc/*.d |	Displays all the files that ends with .d
 echo /etc/r*.conf |	Displays all the files that starts with r and ends with .conf
