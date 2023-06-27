@@ -124,6 +124,7 @@ ls /usr/share/doc |	Some system features also have more detailed help documents 
 locate crontab |	Searches for files that have crontab as part of their name. An easy way to search for a file is to use the locate command
 locate -b "\crontab" |	Finds files that are just named crontab
 whereis passwd |	Finds where a command (or its man pages) is located
+&nbsp; | &nbsp;
 ls / |	lists the contents of the root directory
 pwd |	To determine where the user is currently located within the filesystem. print working directory command can be used
 cd Documents |	Changes the current directory to Documents
