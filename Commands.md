@@ -467,6 +467,7 @@ grep -E 'sshd|root|operator' passwd|	Higlights the strings sshd or root or opera
 egrep 'no(b|n)' passwd|	Matches and highlights nob or non
 head passwd | grep '[0-9]'|	Higlights the matched numbers in the range given
 grep -E '[0-9]{3}' passwd|	Higlights the matched numbers in the range given but only the 3 digit numbers
+&nbsp; | &nbsp;
 vi test.sh |	Opens a sh file in vi editor
 sh test.sh |	Passes test.sh as an argument to Shell
 ./test.sh |	Executes test.sh file but throws error if execute permission is not present
