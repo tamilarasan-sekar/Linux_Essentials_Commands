@@ -498,6 +498,7 @@ vi num.sh |	Opens num.sh in the vi editor
 cat num.sh|	Displays the contents of num.sh
 chmod a+x num.sh|	Provides execute permission to all the users and groups
 ./num.sh|	Executes num.sh
+&nbsp; | &nbsp;
 arch|	Gives which family the CPU of the current system belongs to
 lscpu|	Gives more details about the CPU
 free -m|	Lists the memory and swap space details in MB -g for gigabyte
