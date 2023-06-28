@@ -341,6 +341,7 @@ ls -l udev.zip |	Lists the file attributes for udev.zip
 unzip -l udev.zip |	Lists the files and directories of udev.zip
 rm -r etc |	Removes etc and its subdirectories recursively
 unzip udev.zip |	Unzips udev.zip directory. To extract the zip archive, use the unzip command without any options
+&nbsp; | &nbsp;
 cat food.txt |	Displays the contents of food.txt i.e Food is good
 less words |	There are many movement commands for the less command, each with multiple possible keys or key combinations. While this may seem intimidating, it is not necessary to memorize all of these movement commands. When viewing a file with the less command, use the H key or Shift+H to display a help screen
 head /etc/sysctl.conf|	Displays the first five lines of the file
