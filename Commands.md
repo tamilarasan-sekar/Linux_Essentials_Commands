@@ -270,6 +270,7 @@ rm -r Myetc |	Removes directories and their contents recursively
 touch premove |	Creates an empty file called premove
 mv premove postmove |	This command “cuts” the premove file and “pastes” it to a file called postmove
 rm postmove |	Removes postmove file
+&nbsp;|	&nbsp;
 cd Documents |	Changes the directory to Documents
 ls -l longfile* |	Lists the file attributes of longfile followed by any charcter/characters
 gzip longfile.txt |	Compresses longfile.txt using Lempel-Ziv data compression algorithm
