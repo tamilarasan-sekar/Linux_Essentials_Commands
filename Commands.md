@@ -563,6 +563,7 @@ kill 138 |	Kills the process that has the id 138
 ls /var/log |	List the files and directories from var/log. System logs are stored in the /var/log directory
 ssh localhost|	ssh to localhost
 tail -5 /var/log/auth.log|	Displays last 5 entries of /var/log/auth.log
+&nbsp; | &nbsp;
 su - |	Swiches from current User to root
 cat /etc/sysconfig/network-scripts/ifcfg-eth0 |	Displays the contents of ifcfg-eth0 file
 cat /etc/resolv.conf|	Displays the contents of resolv.conf file
