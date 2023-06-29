@@ -512,6 +512,7 @@ lspci -k|	The-k option to show devices along with the kernel driver and modules 
 lsmod|	Displays the currently loaded modules
 fdisk|	Lists the disk partitions
 fdisk -l|	Lists the partition tables for the specified devices and then exits
+&nbsp; | &nbsp;
 su -|	Swiches from current User to root
 cat /proc/sys/net/ipv4/icmp_echo_ignore_all |	Lists the contents of the file
 ping -c1 localhost|	Pings the local host
