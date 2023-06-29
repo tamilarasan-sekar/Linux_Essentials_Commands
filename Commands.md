@@ -601,6 +601,7 @@ dig -x 192.168.1.2|	dig command resolves the IP address 192.168.1.2 to a hostnam
 netstat --help|	Displays the help section for netstat
 netstat -tl|	Displays the ports that are Listening to
 netstat -ltn|	The -t option to the netstat command limits the listing to TCP ports; the -l option limits the output to ports with listening services; the -n shows the network addresses numerically
+&nbsp; | &nbsp;
 su -|	Switches from current User to root
 su -l|	Switch from current user to root
 su --login|	Switch from current user to root
