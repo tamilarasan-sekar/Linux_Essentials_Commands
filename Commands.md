@@ -623,6 +623,7 @@ who |	The who command displays a list of users who are currently logged into the
 who -b -r |	 -b option shows the last time the system started [booted], and the -r option shows the time the system reached the current runlevel
 w |	w command gives a more detailed view of the users who are currently on your system. Output from the w command displays a summary of how long the system has been running, how many users are logged in and the system load averages for the past 1, 5, and 15 minutes. Also displayed is an entry for each user with their login name, tty name (terminal name), host, login time, idle time, JCPU (CPU time used by background jobs), PCPU (CPU time used by the current process) and what is executing on the current command line.
 last|	The last command reads the entire login history from the /var/log/wtmp file and displays all logins and reboot records by default.
+&nbsp; | &nbsp;
 su - |	Switch user as root (without any argument root is default)
 head /etc/shadow |	Displays the first 10 lines from shadow file if the current user is a root user or displays permission denied
 head /etc/passwd |	Displays the first ten lines from passwd file
