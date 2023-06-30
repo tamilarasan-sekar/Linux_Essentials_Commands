@@ -1,4 +1,4 @@
-Commands | Description
+Commandos | Description
  --- | --- 	
 ls |	Lists all the files and directories in current directory
 ls /etc/ppp /etc/ssh |	The ls command also accepts multiple arguments. To list the contents of both the /etc/ppp and /etc/ssh directories, pass them both as arguments
@@ -758,6 +758,7 @@ chown bin pub-dir/pub-file |	Changes the user owner to bin
 ls -ld priv-dir |	Lists the directory permissions
 ls -l priv-dir/priv-file|	Lists the file permissions
 chgrp -R users priv-dir |	Changes the group permissions recursively for all files, directory and sub-directories
+&nbsp; |
 more /etc/shadow |	Lists the contents of shadow file
 ls -l /etc/shadow|	Lists the permissions for the shadow file.
 ls -l /usr/bin/passwd |	Lists the file permissions
