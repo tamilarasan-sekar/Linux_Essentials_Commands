@@ -758,7 +758,7 @@ chown bin pub-dir/pub-file |	Changes the user owner to bin
 ls -ld priv-dir |	Lists the directory permissions
 ls -l priv-dir/priv-file|	Lists the file permissions
 chgrp -R users priv-dir |	Changes the group permissions recursively for all files, directory and sub-directories
-&nbsp; |
+&nbsp; | &nbsp;
 more /etc/shadow |	Lists the contents of shadow file
 ls -l /etc/shadow|	Lists the permissions for the shadow file.
 ls -l /usr/bin/passwd |	Lists the file permissions
