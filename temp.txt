@@ -1,0 +1,257 @@
+#!/bin/bash
+
+
+# Variables
+
+REPO_URL="https://gitlab.com/your_username/your_repository.git"
+
+CLONE_DIR="repository_clone"
+
+LOG_FILE="deployment.log"
+
+
+# Function to log messages
+
+log_message() {
+
+    echo "$(date '+%Y-%m-%d %H:%M:%S') - $1" >> "$LOG_FILE"
+
+}
+
+
+# Function to derive service name from the repository name
+
+derive_service_name() {
+
+    echo "$REPO_URL" | awk -F'/' '{print $NF}' | sed 's/.git//'
+
+}
+
+
+# Start logging
+
+log_message "Script started."
+
+
+# Clone the GitLab repository
+
+if git clone "$REPO_URL" "$CLONE_DIR"; then
+
+    log_message "Successfully cloned repository."
+
+else
+
+    log_message "Failed to clone repository."
+
+    exit 1
+
+fi
+
+
+# Derive service name
+
+SERVICE_NAME=$(derive_service_name)
+
+DEPLOYMENT_DIR="deployment/${SERVICE_NAME}"
+
+
+# Create deployment directory
+
+if mkdir -p "$DEPLOYMENT_DIR"; then
+
+    log_message "Created deployment directory: $DEPLOYMENT_DIR"
+
+else
+
+    log_message "Failed to create deployment directory: $DEPLOYMENT_DIR"
+
+    exit 1
+
+fi
+
+
+# Copy file.ini to the service directory
+
+if cp "$CLONE_DIR/file.ini" "$DEPLOYMENT_DIR/"; then
+
+    log_message "Copied file.ini to $DEPLOYMENT_DIR"
+
+else
+
+    log_message "Failed to copy file.ini to $DEPLOYMENT_DIR"
+
+    exit 1
+
+fi
+
+
+# End logging
+
+log_message "Script completed."
+
+
+echo "Deployment completed. Check $LOG_FILE for details."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#!/bin/bash
+
+
+# Variables
+
+LOG_FILE="deployment.log"
+
+
+# Function to log messages with timestamps
+
+log_message() {
+
+    echo "$(date '+%Y-%m-%d %H:%M:%S') - $1" >> "$LOG_FILE"
+
+}
+
+
+# Function to derive service name from the repository name
+
+derive_service_name() {
+
+    echo "$REPO_URL" | awk -F'/' '{print $NF}' | sed 's/.git//'
+
+}
+
+
+# Check if required tools are installed
+
+check_tools() {
+
+    for tool in git cp; do
+
+        if ! command -v $tool &> /dev/null; then
+
+            log_message "Error: $tool is not installed."
+
+            exit 1
+
+        fi
+
+    done
+
+}
+
+
+# Get user input for repository URL and branch
+
+read -p "Enter GitLab repository URL: " REPO_URL
+
+read -p "Enter branch to clone (leave blank for default branch): " BRANCH
+
+
+# Start logging
+
+log_message "Script started."
+
+
+# Verify required tools
+
+check_tools
+
+
+# Clone the GitLab repository
+
+if [ -z "$BRANCH" ]; then
+
+    git clone "$REPO_URL" repository_clone
+
+else
+
+    git clone -b "$BRANCH" "$REPO_URL" repository_clone
+
+fi
+
+
+if [ $? -eq 0 ]; then
+
+    log_message "Successfully cloned repository."
+
+else
+
+    log_message "Failed to clone repository."
+
+    exit 1
+
+fi
+
+
+# Derive service name
+
+SERVICE_NAME=$(derive_service_name)
+
+DEPLOYMENT_DIR="deployment/${SERVICE_NAME}"
+
+
+# Create deployment directory
+
+if mkdir -p "$DEPLOYMENT_DIR"; then
+
+    log_message "Created deployment directory: $DEPLOYMENT_DIR"
+
+else
+
+    log_message "Failed to create deployment directory: $DEPLOYMENT_DIR"
+
+    exit 1
+
+fi
+
+
+# Backup existing file.ini if it exists
+
+if [ -f "$DEPLOYMENT_DIR/file.ini" ]; then
+
+    mv "$DEPLOYMENT_DIR/file.ini" "$DEPLOYMENT_DIR/file.ini.bak"
+
+    log_message "Backed up existing file.ini to file.ini.bak"
+
+fi
+
+
+# Copy file.ini to the service directory
+
+if cp "repository_clone/file.ini" "$DEPLOYMENT_DIR/"; then
+
+    log_message "Copied file.ini to $DEPLOYMENT_DIR"
+
+else
+
+    log_message "Failed to copy file.ini to $DEPLOYMENT_DIR"
+
+    exit 1
+
+fi
+
+
+# End logging
+
+log_message "Script completed."
+
+
+echo "Deployment completed. Check $LOG_FILE for details."
+
