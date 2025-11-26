@@ -3,7 +3,7 @@
 A compact reference of common Linux commands with short descriptions and examples.
 
 ## Table of contents
-- Listing & metadata
+- Listing Files & Directories
 - Navigation & directories
 - Files & copying
 - Compression & archiving
@@ -16,7 +16,7 @@ A compact reference of common Linux commands with short descriptions and example
 
 ---
 
-## Listing & metadata
+## Listing Files & Directories
 
 - `ls` — Lists all the files and directories in current directory
 - `ls /etc/ppp /etc/ssh` — The ls command also accepts multiple arguments. To list the contents of both the /etc/ppp and /etc/ssh directories, pass them both as arguments
