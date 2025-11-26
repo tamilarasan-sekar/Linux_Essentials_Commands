@@ -25,5 +25,15 @@ To check whether formatting is needed:
 
 ```bash
 git diff --exit-code
+
+### Linting Markdown (optional)
+
+To enable the markdown linter locally, install Node.js and run:
+
+```bash
+brew install node
+npx markdownlint-cli -c ./.markdownlint.json "**/*.md"
+```
+
 ```
 
