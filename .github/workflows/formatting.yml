@@ -1,0 +1,22 @@
+name: Formatting
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+  push:
+    branches: [main]
+
+jobs:
+  formatting:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - name: Run text formatter
+        run: python scripts/format_text_files.py
+      - name: Ensure no changes
+        run: git diff --exit-code
+        shell: bash

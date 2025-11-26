@@ -1,0 +1,10 @@
+# Pre-commit config: run the repository's text formatting script on staged files
+repos:
+  - repo: local
+    hooks:
+      - id: format-text-files
+        name: format-text-files
+        entry: python scripts/format_text_files.py
+        language: system
+        types: [text]
+        files: '\\.(txt|md|md\\.bak)$'
