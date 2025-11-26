@@ -36,4 +36,3 @@ npx markdownlint-cli -c ./.markdownlint.json "**/*.md"
 ```
 
 ```
-
