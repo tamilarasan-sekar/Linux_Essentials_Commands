@@ -596,8 +596,6 @@ A compact reference of common Linux commands with short descriptions and example
 - `find / -inum 278772 2> /dev/null` — Finds the file that has that inode number
 - `echo "data" > source` — Writes data to the source file
 
-
-
 ---
 
 ## History & variables
@@ -616,4 +614,3 @@ A compact reference of common Linux commands with short descriptions and example
 ---
 
 ## Misc
-
