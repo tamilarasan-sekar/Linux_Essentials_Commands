@@ -10,3 +10,6 @@ fi
 echo "Installing pre-commit hooks..."
 python3 -m pre_commit install || true
 echo "Done. Run 'pre-commit install' manually if the above fails."
+if ! command -v node >/dev/null 2>&1; then
+  echo "Note: 'markdownlint' pre-commit hook needs Node.js. Install Node.js to enable markdown linting locally."
+fi
