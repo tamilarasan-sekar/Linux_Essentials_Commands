@@ -1,0 +1,132 @@
+- `true || echo Nothing to see here` — Displays(nothing)
+- `cat --help` — This option is useful to learn the basic usage of a command quickly without leaving the command line
+- `cat example.txt` — Displays the contents of example.txt
+- `cat food.txt` — Displays the contents of food.txt i.e Food is good
+- `less words` — There are many movement commands for the less command, each with multiple possible keys or key combinations. While this may seem intimidating, it is not necessary to memorize all of these movement commands. When viewing a file with the less command, use the H key or Shift+H to display a help screen
+- `head /etc/sysctl.conf` — Displays the first five lines of the file
+- `tail -5 /etc/sysctl.conf` — Displays the last five lines of the file
+- `head -n 3 /etc/sysctl.conf` — Displays the first three lines of the file
+- `nl /etc/passwd` — Displays the line numbers
+- `nl /etc/passwd` — tail -n +25
+- `nl /etc/passwd` — head -n +25
+- `nl /etc/passwd` — head -n -25
+- `nl /etc/passwd` — tail -n -25
+- `cat example.txt` — Displays the contents of example.txt
+- `cat error.txt` — Displays the contents of error.txt
+- `cat all.txt` — Displays the content of all.txt
+- `cat` — Text followed by cat will be displayed on the screen after enter is pressed
+- `cat > new.txt` — Text followed by cat will be written to new.txt
+- `cat new.txt` — Displays the content of new.txt file
+- `tr 'a-z' 'A-Z'` — Text followed by this command will be translated from lower case to uppercase and displayed on the terminal
+- `tr 'a-z' 'A-Z' example.txt` — Syntax error
+- `tr 'a-z' 'A-Z' < example.txt` — Contents of example.txt will be translated and displayed on terminal
+- `tr 'a-z' 'A-Z' < example.txt > newexample.txt` — Contents of example.txt will be translated and written to newexample.txt
+- `cat newexample.txt` — Displays the content of newexample.txt file
+- `head -5 /etc/passwd > mypasswd` — The 1st 5 lines will be written to mypasswd file
+- `cat mypasswd` — Displays the contents of mypasswd file
+- `sort mypasswd` — Sorts the contents of mypasswd file based on alphabetic dictionary or  numeric order
+- `sort -t: -n -k3 mypasswd` — Delimiter is : sort by field 3 in numeric order
+- `sort -t: -n -r -k3 mypasswd` — Delimiter is : sort by field 3 in numeric reverse order
+- `cat os.csv` — Display the contents of os.csv
+- `sort -t, -k2 -k1n -k3 os.csv` — Delimiter is , (comma) sort by field 2, 1 in numeric order and then by 3
+- `wc /etc/passwd /etc/passwd-` — Displays the number of lines, words, bytes and file name
+- `cut -d: -f1,5-7 mypasswd` — Colon is the delimiter, Extract Field 1, 5 to 7 from mypasswd file
+- `grep bash /etc/passwd` — Searches for bash in /etc/passwd, if found displays it
+- `grep --color bash /etc/passwd` — Searches for bash in /etc/passwd, if found highlights it
+- `grep -c bash /etc/passwd` — Returns the count of bash found in /etc/passwd
+- `grep -n bash /etc/passwd` — Searches for bash in /etc/passwd, if found displays it with line number
+- `grep -v nologin /etc/passwd` — Inverts the match i.e displays all except nologin
+- `grep -i the newhome.txt` — Ignores the case while finding a match
+- `grep are newhome.txt` — Searches for are in newhome.txt
+- `grep -w are newhome.txt` — Searches for the exact whole word
+- `cat red.txt` — Displays the contents of red.txt
+- `grep 'r..f' red.txt` — Displays all the words that matches r..f pattern i.e r followed by any two characters and ends with f
+- `grep 'r..t' /etc/passwd` — Displays all the words that matches r..f pattern i.e r followed by any two characters and ends with t from the file /etc/passwd
+- `grep '....' red.txt` — Displays all the words which has atleast 4 characters or more
+- `cat profile.txt` — Displays the contents of profile.txt
+- `grep '[0-9]' profile.txt` — Displays all that matches the numbers 0 to 9 in profile.txt
+- `grep '[d-a]' profile.txt` — Invalid range it should be a-d
+- `grep '[^0-9]' profile.txt` — Displays all that matches lines which contain non-numbers. i.e lines which only has numbers will not be displayed. Lines which has alphabets and numbers will be displayed. Example below
+- `cat red.txt` — Displays the contents of red.txt
+- `grep 're*d' red.txt` — Pattern matches re followed by zero or more occurrences of the previous letter e followed by d
+- `grep 'r[oe]*d' red.txt` — Pattern matches r followed by zero or more occurrences of o or e followed by d
+- `grep 'z*' red.txt` — Pattern matches zero or more occurrences of the previous character to * i.e z
+- `grep 'e*' red.txt` — Pattern matches zero or more occurrences of the previous character to * i.e e
+- `grep 'ee*' red.txt` — Pattern ee* effectively matching every line which contains at least one e.
+- `grep 'root' /etc/passwd` — Pattern matches root in the files
+- `grep '^root' /etc/passwd` — Pattern matches root only at the start of the line
+- `cat alpha-first.txt` — Dislays the contents of alpha-first.txt
+- `grep 'r$' alpha-first.txt` — Pattern matches only r at the end of the line
+- `cat newhome.txt` — Displays the contents of newhome.txt
+- `grep 're*' newhome.txt` — Pattern matches r followed by zero or more occurrences of e
+- `grep 're\*' newhome.txt` — Pattern matches re followed by *
+- `grep -E 'colou?r' spelling.txt` — Pattern matches Zero or one occurrence of previous character
+- `grep -E 'e+' red.txt` — Pattern matches One or more occurrence of previous character
+- `grep -E 'gray` — grey' spelling.txt
+- `cat mymessage` — Displays the contents of mymessage
+- `cat err.txt` — Displays the contents of err.txt
+- `cat std.err` — Displays the contents of std.err
+- `cat std.out` — Displays the contents of std.out
+- `cat find.out` — Displays the contents of find.out
+- `tr a-z A-Z` — Translates Small letters  to Capital letters. Note: Press Control+d, to signal the tr command to stop processing standard input
+- `tr A-Z a-z > myfile` — Translates the capital letters to small letters received as input and writes it to myfile. Press the Enter key to make sure your cursor is on the line below "This works!", then use Control+d to stop input
+- `cat myfile` — Displays the contents of myfile
+- `tr a-z A-Z < myfile` — Translates the small letters to capital letters from myfile and displays on the screen
+- `cut -d: -f1 /etc/passwd` — Delimiter is : and extracts the field 1 based on the delimiter from passwd
+- `cut -d: -f1 /etc/passwd` — sort
+- `cut -d: -f1 /etc/passwd` — sort
+- `cat /etc/passwd` — Displays the contents of the passwd file
+- `less /etc/passwd` — Displays the contents of passwd file viewable in display area
+- `head /etc/passwd` — Displays only the first 10 lines of passwd file
+- `tail /etc/passwd` — Displays the last ten lines of passwd file
+- `head -2 /etc/passwd` — Displays the first 2 lines of passwd file
+- `head -n -20 /etc/passwd` — Excludes last 20 lines and displays the rest
+- `grep sshd passwd` — Higlights the string sshd that matches in the passwd file
+- `grep root passwd` — Higlights the string root that matches in the passwd file
+- `grep '^root' passwd` — Higlights the string root that matches at the beginning of the line in passwd file
+- `grep 'sync' passwd` — Higlights the string sync that matches in the passwd file
+- `grep 'sync$' passwd` — Higlights the string sync that matches at the end of the line in passwd file
+- `grep '.y' passwd` — Higlights the strings that matches any character followed by a 'y'
+- `grep 'sshd` — root
+- `grep -E 'sshd` — root
+- `head passwd` — grep '[0-9]'
+- `grep -E '[0-9]{3}' passwd` — Higlights the matched numbers in the range given but only the 3 digit numbers
+- `cat sample.sh` — Displays the contents of sample.sh
+- `cat drive.sh` — Displays the contents of drive.sh
+- `cat check.sh` — Displays the contents of check.sh
+- `cat num.sh` — Displays the contents of num.sh
+- `head -n 20 /proc/cpuinfo` — Displays the first 20 lines of CPU information from proc file
+- `cat /proc/sys/net/ipv4/icmp_echo_ignore_all` — Lists the contents of the file
+- `cat /proc/loadavg` — The load averages shown in the first line of output from the top command indicate how busy the system has been during the last one, five and fifteen minutes. This information can also be viewed by executing the uptime command or directly by displaying the contents of the /proc/loadavg file
+- `cat /proc/1/cmdline; echo` — Displays the information from the cmdline file. echo keeps the prompt in a new line
+- `cat /proc/cmdline` — Displays the arguments that were passed to the kernel at boot time. This output contains all of the information, such as command line parameters, special instructions, etc., that was passed to the kernel when it was first started.
+- `tail -5 /var/log/auth.log` — Displays last 5 entries of /var/log/auth.log
+- `cat /etc/sysconfig/network-scripts/ifcfg-eth0` — Displays the contents of ifcfg-eth0 file
+- `cat /etc/resolv.conf` — Displays the contents of resolv.conf file
+- `cat /etc/hosts` — Displays the contents of hosts File
+- `cat /etc/nsswitch.conf` — Displays the contents of nsswitch.conf file
+- `cat ~/.ssh/known_hosts` — Displays the contents of known hosts
+- `grep 127.0.0.1 /etc/hosts` — Searches for 127.0.0.1 in /etc/hosts and displays it if found
+- `tail -5 /etc/passwd` — Displays the last 5 entries of passwd file
+- `tail -5 /etc/shadow` — Displays the last 5 entries of shadow file
+- `grep mail /etc/group` — Searches for mail and highlights it. Displays the group information.
+- `cat /etc/group` — grep sysadmin
+- `head /etc/shadow` — Displays the first 10 lines from shadow file if the current user is a root user or displays permission denied
+- `head /etc/passwd` — Displays the first ten lines from passwd file
+- `grep sysadmin /etc/passwd` — Highligts sysadmin from the matched lines. The output only includes the account information for that one username
+- `head -3 /etc/shadow` — Displays the first 10 lines from /etc/shadow if the current user is root or displays permission denied
+- `grep root /etc/group` — After creating or modifying a group, you can verify the changes by viewing the group configuration information in the /etc/group file with the grep command.
+- `grep research /etc/group` — Searches research and highlights it from /etc/group
+- `grep development /etc/group` — Searches development and highlights it from /etc/group
+- `grep -Ev '^|^$' /etc/login.defs` — This file contains many comments and blank lines, so to only view lines that are not comments or blank lines (the real configuration settings)
+- `grep '/home/jane' /etc/passwd` — Searches for /home/jane on passwd file and displays that line
+- `grep jane /etc/passwd` — Searches for jane on passwd file and displays that line
+- `grep jane /etc/shadow` — Searches for jane on shadow file and displays that line
+- `grep jane /etc/group` — Searches for jane on group file and displays that line
+- `grep jane /etc/gshadow` — Searches for jane on gshadow file and displays that line
+- `grep jane /etc/shadow` — cut -d: -f1,5
+- `grep sales /etc/group` — Matches the sales value from /etc/group and displays it. Another method to retrieve group information
+- `grep clerks /etc/group` — Matches clerk in /etc/group and retrieves the group information. Note that any files that had been in the sales group will now have no group name and will now be orphaned files.
+- `grep clerks /etc/group` — Matches clerk in /etc/group and retrieves the group information
+- `grep student /etc/passwd` — Matches student in /etc/passwd and retrieves the user information
+- `grep student /etc/group` — Matches student in /etc/group and retrieves the group information. The user's account information is stored in the /etc/passwd and /etc/shadow files. The user's group information can be found in the /etc/passwd and /etc/group files.

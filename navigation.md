@@ -1,0 +1,48 @@
+- `pwd` — Prints working directory
+- `cd /bin` — Changes from the current directory to /bin
+- `cd` — Changes from the current directory to users home directory
+- `pwd` — To determine where the user is currently located within the filesystem. print working directory command can be used
+- `cd Documents` — Changes the current directory to Documents
+- `cd` — Changes to home directory i.e /home/<user>
+- `cd Junk` — Changes the directory to Junk if exists. If not error will be thrown
+- `cd /home/sysadmin` — Changes the current directory to /home/sysadmin
+- `pwd` — Prints Working Directory
+- `cd /home/sysadmin/Documents/School/Art` — Changes the current directory to Art (Absolute Path)
+- `cd Art` — Changes the current directory to Art (Relative Path)
+- `cd School/Art` — Changes the current directory to Art (Relative Path)
+- `pwd` — Prints Working Directory
+- `cd ../../Downloads` — From the current Directory It Navigates two levels up and goes to Downloads(Relative Path)
+- `pwd` — Prints working directory
+- `cd /` — Changes the directory to /(root)
+- `cd` — Changes the directory to home i.e /home/sysadmin
+- `cd /home` — Changes the directory to /home
+- `pwd` — Prints the working directory
+- `cd ~` — Changes the directory to home
+- `pwd` — Prints the working directory i.e /home/sysadmin
+- `cd ~sysadmin` — Changes the directory to home of sysadmin i.e /home/sysadmin
+- `cd ~/` — Changes to home directory of the current user
+- `echo ~ ~sysadmin ~root ~mail ~nobody` — Prints home directory of current user
+- `cd ~root` — Changes to /home directory, but throws error since current user dont have access
+- `cd /usr/bin` — Changes the directory to bin
+- `cd /usr` — Changes the directory to usr
+- `cd /usr/share/doc` — Changes the directory to /usr/share/doc
+- `cd bash` — Changes the directory to bash i.e /bash
+- `cd ..` — Changes the directory above the current directory
+- `pwd` — Prints the working directory i.e /usr/share/doc
+- `cd ../dict` — Changes up one level from the current directory and then down into the dict directory
+- `cd` — Changes the current directory to Home Directory
+- `cd Videos` — Navigates from the current Directory to Videos directory
+- `cd /etc` — Changes the current directory to /etc
+- `cd` — Changes the directory to /home/sysadmin (user)
+- `cd Documents` — Changes the directory to Documents
+- `cd ~` — Change to user home directory
+- `cd Downloads` — Change to Downloads directory
+- `cd School` — Change to School directory
+- `cd tmp` — Changes the current directory to tmp
+- `cd` — Change to the users home directory
+- `cd mybackups` — Changes the directory to mybackups
+- `cd ~/Documents` — Change the directory Documents
+- `cd Documents` — Changes the directory to Documents
+- `cd /etc` — Changes the directory to etc
+- `cd /tmp` — Changes the directory to /tmp
+- `cd` — Changes to the home directory

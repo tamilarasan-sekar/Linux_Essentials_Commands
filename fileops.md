@@ -1,0 +1,63 @@
+- `ls -d /etc/s*` — Lists all the directories that starts with s under /etc. * character can match "zero or more of any characters" in a filename. Note that the -d option prevents files from subdirectories from being displayed. It should always be used with the ls command when you are using file globbing
+- `ls -d /etc/????` — Displays all of the files in the /etc directory that are exactly four characters long.The ? character can be used to match exactly 1 character in a file name
+- `ls -d /etc/x*` — Lists the name of the directories that starts with x
+- `cp /etc/hosts ~` — Copies hosts to home directory with the same name ie hosts
+- `cp -v /etc/hosts ~` — Copies hosts directory to home directory. The -v option causes the cp command to produce output if successful. The -v option stands for verbose
+- `cp /etc/hosts ~/hosts.copy` — Copies hosts directory and pastes as hosts.copy in the destination
+- `cp -v /etc/hosts ~/hosts.copy` — Same as above command verbose enabled
+- `cp /etc/hostname example.txt` — Copies hostname to example.txt
+- `cp /etc/timezone example.txt` — Copies timezone to example.txt
+- `cp -i /etc/hosts example.txt` — Copies the file from source to destination in interactive mode. For example if the same file exists in destination already -i option pprompts you to enter y or n. Based the yes or no option the file will be overwritten or not overwritten
+- `cp -i /etc/skel/.* ~` — Copies all the files from source to destination in interactive mode
+- `cp -n /etc/skel/.* ~` — Copies all the files from source to destination. If the same file exists in destination it will not be overwritten. -n option is used to overwrite
+- `cp -r /etc/skel/.* ~` — Copies all the folders and files from source to destination recursively
+- `mv hosts Videos` — Moves the hosts file to Videos Directory
+- `mv /etc/hosts .` — Moves the hosts file from /etc to current Directory
+- `mv example.txt Videos/newexample.txt` — Moves the file example.txt from current directory to Videos and renames the file name as newexample.txt
+- `mv newexample.txt myfile.txt` — Renames the file newexample.txt to myfile.txt
+- `touch sample` — Creates a empty file without any data
+- `rm sample` — Removes the sample file permanently
+- `rm hosts.copy` — Removes the hosts.copy file permanently
+- `touch sample.txt example.txt test.txt` — Creates multiple empty files without any data
+- `rm -i *.txt` — Removes all the .txt files in interactive mode. User will be prompted for each file
+- `rm Videos` — Throws an error since Videos is a directory. By default rm without any option cant delete a directory
+- `rm -r Videos` — Removes the directory and the contents of the Videos directory
+- `rmdir Documents` — Removes the directory Documents if its empty
+- `mkdir test` — Creates a new directory test in the current directory
+- `cp /etc/hosts hosts` — Copy hosts file from /etc/hosts to the current directory with name as hosts
+- `cp -v /etc/hosts hosts` — Copies hosts file from /etc/hosts to the current directory in verbose mode i.e source target will be shown
+- `rm hosts` — Removes hosts file from the current directory
+- `cp -v /etc/hosts .` — Copies hosts file from /etc/hosts to the current directory '.' in verbose mode i.e source target will be shown
+- `rm hosts` — Removes hosts file from the current directory
+- `cp –p hosts /home/sysadmin` — Copies the file to /home/sysadmin and preserves file attributes i.e the date and permission modes were preserved
+- `rm hosts` — Removes hosts file from the current directory
+- `cp -p /etc/hosts ~` — Copies the file to home directory and preserves file attributes i.e the date and permission modes were preserved
+- `cp hosts newname` — Copies the hosts file in the current directory and names it as new name
+- `rm hosts newname` — Removes the hosts and newname file
+- `mkdir Myetc` — Creates a new directory named Myetc
+- `cp –R /etc/udev Myetc` — Recursively copies all the files and directories from /etc/udev to Myetc
+- `rm -r Myetc` — Removes directories and their contents recursively
+- `touch premove` — Creates an empty file called premove
+- `mv premove postmove` — This command “cuts” the premove file and “pastes” it to a file called postmove
+- `rm postmove` — Removes postmove file
+- `cp Documents/folders.tbz Downloads/folders.tbz` — Copy folders.tbz from Documents to Downloads
+- `mkdir tmp` — Creates a new directory tmp
+- `cp School.zip tmp/School.zip` — Copies School.zip from the current directory to tmp
+- `mkdir mybackups` — Creates a new directory mybackups
+- `cp /usr/share/dict/words .` — Copies the /usr/share/dict/words to the current directory
+- `rm -r etc` — Removes etc and its subdirectories recursively
+- `mkdir bin` — Creates a directory bin
+- `mv sample.sh bin` — Moves sample.sh from current directory to bin
+- `rm ~/.ssh/known_hosts` — Removes the known hosts file
+- `touch /tmp/filetest1` — Creates a empty file filetest1 under /tmp
+- `touch /tmp/filetest2` — Creates a empty file filetest2 under /tmp
+- `touch sample` — Creates a empty file sample in the current directory
+- `touch abc.txt` — Creates a empty file abc.txt
+- `mkdir test-dir` — Creates a new test-dir directory
+- `mkdir priv-dir pub-dir` — Creates two directories priv-dir and pub-dir
+- `touch priv-dir/priv-file` — Creates a empty priv-file under priv-dir
+- `touch pub-dir/pub-file` — Creates a empty pub-file under pub-dir
+- `touch /tmp/data/file.txt` — Creates an empty file
+- `rm test.txt` — Removes test.txt
+- `rm hardlinktwo` — Removes hardlinktwo
+- `rm hardlink` — Removes hardlink

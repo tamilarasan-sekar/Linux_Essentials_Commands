@@ -1,0 +1,24 @@
+- `man ls` — Displays the manual page for ls command
+- `man man` — Displays man page about man
+- `man passwd` — Displays under which section the command was found
+- `man -f passwd` — -f allows to search with command or the term
+- `man 5 passwd` — Searches the 5th section for passwd
+- `man -k copy` — -k option to the man command searches both the names and descriptions of the man pages for a keyword
+- `whereis ls` — This command searches for commands, source files and man pages in specific locations where these files are typically stored
+- `locate gshadow` — Searches for file or directory with the name gshadow. This command searches a database of all files and directories that were on the system when the database was created. Typically, the command to generate this database is run nightly. Any files created today will not be searchable with the locate command. If root access is available, it’s possible to update the locate database manually by running the updatedb command. Regular users cannot update the database file
+- `locate -c passwd` — Displays the number of files matched the text passwd
+- `locate -c -b passwd` — Displays only the number of files that has the search text in the base name of the filename
+- `locate -b "\passwd"` — Limits the output to filenames that exactly matches the term passwd
+- `info ls` — Displays info page for the ls command. Navigate the document using the arrow keys. The items under the menu are hyperlinks that link to nodes that describe more about the ls command. For example, placing the cursor on the line * Sorting the output:: and pressing the Enter key, leads to a node that describes sorting the output of the ls command. Note that going into the node about sorting leads into a sub-node of the original. To go back to the previous node, use the U key. While U leads to the start of the node one level up, the L key returns to the same location as before entering the sorting node
+- `info` — Execute the info command without any arguments to be taken to the top level of the documentation. This is a good starting point to explore many of the features offered
+- `man date` — Displays the manual page for date command. Documents that are displayed with the man command are called "Man Pages"
+- `man -k password` — -k option to the man command searches in both the names and descriptions of the man pages for a keyword
+- `apropos password` — There is no difference between man -k and the apropos command
+- `man -f passwd` — Displays the pages that matches the name passwd
+- `man 5 passwd` — To display a man page for a different section, provide the section number as the first argument to the man. q to return to the system prompt
+- `whatis passwd` — Displays all man page sections for a name
+- `info date` — Almost all system features (commands, system files, etc.) have man pages. Some of these features also have a more advanced feature called info pages. While viewing the info page from the previous step, type Shift and the letter h to see a list of movement commands. Note that they are different from the movement commands used in man pages. After reading the movement commands, type the letter l (lowercase L) to return to viewing the document
+- `locate crontab` — Searches for files that have crontab as part of their name. An easy way to search for a file is to use the locate command
+- `locate -b "\crontab"` — Finds files that are just named crontab
+- `whereis passwd` — Finds where a command (or its man pages) is located
+- `man 5 passwd` — Displays Manual page for passwd

@@ -1,0 +1,10 @@
+- `history` — Displays the history of the commands executed
+- `!3` — Executes the third from history
+- `history 3` — Displays last three history of commands
+- `!-3` — Executes the third command on the history list from the last
+- `!ls` — Executes the most recent ls command
+- `!!` — Executes the last recent command from the history list
+- `HISTSIZE=500` — Changes the value to 500
+- `history` — Displays the history of the commands executed
+- `history 5` — Displays last Five history of commands
+- `!9` — Executes the ninth command from history

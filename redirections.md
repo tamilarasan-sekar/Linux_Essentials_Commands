@@ -1,0 +1,41 @@
+- `env | grep variable1` — Searches and displays the variable1 if found
+- `env | grep variable2` — Searches and displays the variable2 if found
+- `ls /etc/ppp || echo failed` — Lists the directory or prints failed
+- `ls /etc/junk || echo failed` — Lists the directory or prints failed. If the directory does not exist then failed will be printed
+- `false || echo Fail Or` — Displays Fail Or
+- `true || echo Nothing to see here` — Displays(nothing)
+- `cd` — Changes to home directory i.e /home/<user>
+- `echo "Line 1" > example.txt` — Writes Line1 to the example.txt file in the current directory
+- `echo "New line 1" > example.txt` — Overwrites New line 1 to the example.txt file
+- `echo "Another line" >> example.txt` — Appends Another line to example.txt
+- `ls /fake > output.txt` — Lists the file and directories if present and output is redirected to output.txt
+- `ls /fake 2> error.txt` — Redirects the error to error.txt file
+- `ls /fake /etc/ppp > example.txt` — Lists /fake and /etc/ppp if exists and writes to example.txt
+- `ls /fake /etc/ppp 2> error.txt` — Redirects the error to error.txt while listing
+- `ls /fake /etc/ppp &> all.txt` — Redirects the output and error to all.txt
+- `ls /fake /etc/ppp /junk /etc/sound &> all.txt` — Redirects the output and error to all.txt
+- `ls /fake /etc/ppp > example.txt 2> error.txt` — Redirects the output to example.txt and error to error.txt
+- `cat > new.txt` — Text followed by cat will be written to new.txt
+- `tr 'a-z' 'A-Z' < example.txt > newexample.txt` — Contents of example.txt will be translated and written to newexample.txt
+- `head -5 /etc/passwd > mypasswd` — The 1st 5 lines will be written to mypasswd file
+- `echo "Hello World" > mymessage` — Redirects Hello World to mymessage
+- `echo "Greetings" > mymessage` — Overwrites Grretings to mymessage file
+- `find /etc -name hosts 2> err.txt` — Searches for hosts file in /etc directory. If not found writes the error to err.txt
+- `find /etc -name hosts > std.out 2> std.err` — Searches for hosts file in /etc directory. If found the output will be redirected to std.out and error to std.err
+- `find /etc -name hosts > find.out 2>&1` — Redirect both output and error to find.out. The 2>&1 part of the command means send the stderr channel 2 to the same place where stdout channel 1 is going
+- `tr A-Z a-z > myfile` — Translates the capital letters to small letters received as input and writes it to myfile. Press the Enter key to make sure your cursor is on the line below "This works!", then use Control+d to stop input
+- `echo 1 > /proc/sys/net/ipv4/icmp_echo_ignore_all` — Writes 1 to the file
+- `ping localhost > /dev/null` — The system will continue to ping until the process is terminated or suspended by the user. Terminate the foreground process by pressing Ctrl-C.
+- `ping localhost > /dev/null &` — Pings the local host, ampersand & to the end of the command, the process is started in the background, allowing the user to maintain control of the terminal
+- `echo "date" > test.sh` — Writes date to test.sh
+- `chmod g+s <file` — directory>
+- `chmod 2775 <file` — directory>
+- `chmod g-s <file` — directory>
+- `chmod 0775 <file` — directory>
+- `chmod o+t <directory>` — Sets Sticky bit to the directory in a symbolic method
+- `chmod 1775 <file` — directory>
+- `chmod o-t <directory>` — Removes Sticky bit from the directory in a symbolic method
+- `chmod 0775 <directory>` — Removes Sticky bit from the directory in Octal method
+- `echo data > file.original` — Redirects/writes the contents of data to file.original1
+- `find / -inum 278772 2> /dev/null` — Finds the file that has that inode number
+- `echo "data" > source` — Writes data to the source file

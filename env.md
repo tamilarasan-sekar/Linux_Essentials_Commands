@@ -1,0 +1,25 @@
+- `variable1='Something'` — Assigns Something to variable1
+- `env | grep variable1` — Searches and displays the variable1 if found
+- `export variable2='Else'` — Assigns Else to variable2 and exports it as global variable
+- `env | grep variable2` — Searches and displays the variable2 if found
+- `variable1=$variable1' '$variable2` — Updates variable1 as variable1+variable2
+- `unset variable2` — Removes variable2
+- `PATH=/usr/bin/custom:$PATH` — When updating the PATH variable, always include the current path, so as not to lose access to commands located in those directories. This can be accomplished by appending $PATH to the value in the assignment expression. Recall that a variable name preceded by a dollar sign represents the value of the variable.
+- `which cal` — Searches for the location of cal command by searching the PATH variable
+- `type cal` — Determines the type of command. If its external it will display the path of binary
+- `type echo` — Determines the type of command. If its internal it will display as built-in
+- `which echo` — Searches for the location of echo command by searching the PATH variable
+- `type -a echo` — Determines the type of command. -a option of the type command displays all locations that contain the command
+- `alias mycal="cal 2019"` — Sets mycal as alias to cal 2019
+- `type ll` — The type command can identify aliases to other commands
+- `type -a ls` — The type command can identify aliases to other commands. Displays the alias created for ls if any. -a option of the type command displays all locations that contain the command
+- `which date` — which command to determine if there is an executable file. The output of the which command tells you that when you execute the date command, the system will run the command /bin/date. The which command makes use of the PATH variable to determine the location of the date command
+- `type cd` — type command can be used to determine information about command type. Determines the type of command. If its external it will display the path of binary. If its internal it will display as built-in
+- `which ls` — Displays the path of the command from the PATH variable
+- `type cp` — For external commands, the type command displays the location of the command
+- `which cp` — Displays the path of the command from the PATH variable
+- `type -a ls` — a option of the type command displays all locations that contain the command as well as aliases
+- `alias` — To determine what aliases are set on the current shell use the alias command
+- `type vi` — Type command can be used to determine information about command type. Determines the type of command. If its external it will display the path of binary. If its internal it will display as built-in
+- `type vlc` — Displays the path of vlc from PATH variable if its installed
+- `type ls` — Lists the alias assigned to ls

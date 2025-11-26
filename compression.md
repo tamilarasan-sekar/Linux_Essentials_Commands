@@ -1,0 +1,36 @@
+- `gzip longfile.txt` — Compresses longfile.txt using Lempel-Ziv data compression algorithm
+- `gzip -l longfile.txt.gz` — Lists the info of the zip like size before & after compression, ratio and original file name
+- `gunzip longfile.txt.gz` — Unzips the file
+- `tar -cf alpha_files.tar alpha*` — Makes tarfile or tarball by combining all the files that starts with alpha
+- `tar -czf alpha_files.tar.gz alpha*` — Creates tar ball and zips it using gzip
+- `gzip -l alpha_files.tar.gz` — Lists the info of the zip like size before & after compression, ratio and original file name
+- `tar -cjf folders.tbz School` — Creates tar ball and zips it using bzip2
+- `tar -tjf folders.tbz` — Lists the contents of folders.tbz
+- `bunzip2 -c folders.tbz` — tar -t
+- `tar -xjf folders.tbz` — Extract contents of folders using bzip algorithm
+- `tar -xjvf folders.tbz` — Extract contents of folders in Verbose Mode
+- `tar -xjfv folders.tbz` — Error in Syntax f should come before file name
+- `tar -xjvf folders.tbz School/Art/linux.txt` — Extract linux.txt Under School/Art from folders.tbz
+- `zip alpha_files.zip alpha*` — The first argument zipfile is the name of the archive to be created, after that, a list of files to be added. The following example shows a compressed archive called alpha_files.zip being created
+- `zip -r School.zip School` — The zip command will not recurse into subdirectories by default, which is different behavior than the tar command. That is, merely adding School will only add the empty directory and not the files under it. If you want tar like behavior, you must use the –r option to indicate recursion is to be used
+- `unzip -l School.zip` — The –l list option of the unzip command lists files in .zip archives
+- `unzip School.zip` — Extracts the files from School.zip. It gives several options if unzipping files will overwrite existing ones. This can be avoided by copying the zip to some other directory
+- `unzip School.zip linux.txt` — Extracts linux.txt from School.zip. If not present error will be thrown
+- `unzip School.zip School/Math/numbers.txt` — Extracts numbers.txt from School/Math directory
+- `unzip School.zip School/Art/*t` — Extracts all files that ends with t from School/Art directory
+- `tar –cvf mybackups/udev.tar /etc/udev` — Create a tar of /etc/udev under mybackups
+- `tar –tvf mybackups/udev.tar` — List the files and folders under udev.tar
+- `tar –zcvf mybackups/udev.tar.gz /etc/udev` — Compresses the tar file using gzip
+- `tar –xvf udev.tar.gz` — Extracts the files and folders from udev.tar.gz
+- `tar -rvf udev.tar /etc/hosts` — To add a file to an existing archive, use the -r option to the tar command
+- `tar –tvf udev.tar` — Lists the files and folders under udev.tar
+- `gzip words` — Compresses the words directory
+- `gunzip words.gz` — Unzips words.gz in the current directory
+- `bzip2 words` — Compresses the words directory using bzip2
+- `bunzip2 words.bz2` — Unzips the words.bz2 directory
+- `xz words` — Compresses the words directory using xz
+- `unxz words.xz` — Unzips the words.xz directory
+- `zip words.zip words` — Compresses words directory using zip
+- `zip -r udev.zip /etc/udev` — Recursively compresses the /etc/udev directory
+- `unzip -l udev.zip` — Lists the files and directories of udev.zip
+- `unzip udev.zip` — Unzips udev.zip directory. To extract the zip archive, use the unzip command without any options

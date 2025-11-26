@@ -1,0 +1,173 @@
+- `ls` — Lists all the files and directories in current directory
+- `ls /etc/ppp /etc/ssh` — The ls command also accepts multiple arguments. To list the contents of both the /etc/ppp and /etc/ssh directories, pass them both as arguments
+- `ls /etc/ppp` — List the files and directories from /etc/ppp
+- `ls -l` — Lists the files with size, date and permissions
+- `ls -lr` — Lists the files with size, date and permissions and in reverse alphabetical order
+- `ls -l /usr/bin/perl` — By default the -l option of the ls command displays files sizes in bytes
+- `ls -lh` — Lists the files with size, date and permissions and size of the file in human readable form i.e KB, MB and GB
+- `ls -l --human-readable /usr/bin/perl` — Equivalent option for h. Supported mostly in modern Linux System
+- `ls` — Lists all the files and directories in current directory
+- `cal 2030` — Displays the calendar for 2030
+- `cal 1 2030; cal 2 2030; cal 3 2030` — Displays Jan, Feb, March months Calendars of 2030
+- `ls /etc/ppp && echo success` — Lists the directory and prints success if the directory exists
+- `ls /etc/junk && echo success` — Lists the directory and prints success if the directory exists. If not error will be thrown
+- `ls /etc/ppp || echo failed` — Lists the directory or prints failed
+- `ls /etc/junk || echo failed` — Lists the directory or prints failed. If the directory does not exist then failed will be printed
+- `ls` — Lists the files and directories
+- `ls -l` — Lists the files with size, date and permissions
+- `ls -l /tmp` — Lists the attributes of files and directories of /tmp
+- `whoami` — Displays the user name of the current user
+- `uname` — Displays the kernel you are using
+- `uname -n` — Displays the network node hostname
+- `uname --nodename` — Displays the network node hostname
+- `pwd` — Prints working directory
+- `ls /usr/share/doc` — Some system features also have more detailed help documents located in the /usr/share/doc directory structure Execute the following command to view the contents of this document
+- `ls /` — lists the contents of the root directory
+- `pwd` — To determine where the user is currently located within the filesystem. print working directory command can be used
+- `pwd` — Prints Working Directory
+- `pwd` — Prints Working Directory
+- `ls /var` — Lists the files of the directory /var
+- `ls` — Lists the files of the current directory
+- `ls -a` — ls command omits hidden files by default. -a option displays all the hidden files as well. A hidden file is any file (or directory) that begins with a dot . character
+- `ls -l /var/log/` — Each file has details associated with it called metadata. This can include information such as the size, ownership, or timestamps. To view this information, use the -l option to the ls command
+- `ls -l /var/log/lastlog` — Displays the file information such as the size, ownership, or timestamps.The -l option to the ls command displays file sizes in bytes. For text files, a byte is 1 character. For smaller files, byte sizes are fine. However, for larger files, it is hard to comprehend how large the file is
+- `ls -lh /var/log/lastlog` — Displays the file size in a more human-readable size, like megabytes or gigabytes. The -h option must be used with the -l option
+- `ls -d` — When the -d option is used, it refers to the current directory, and not the contents within it. Without any other options, it is rather meaningless. Recall that the current directory is always referred to with a single period . character. To use the -d option in a meaningful way requires the addition of the -l option
+- `ls -ld` — This indicates that the current directory is being listed, and not the contents
+- `ls -R /etc/ppp` — Performs a recursive listing i.e it will list all the files from the dub directories. Be careful with this option; for example, running the command on the root directory would list every file on the file system, including all files on any attached USB device and DVD in the system. Limit the use of recursive listings to smaller directory structures.
+- `ls /etc/ssh` — Lists the files of the /etc/ssh. By default, the ls command sorts files alphabetically by file name
+- `ls -S /etc/ssh` — Sorts the files by size i.e largest to smallest
+- `ls -lS /etc/ssh` — Lists files from largest to smallest and displays the actual size of the file.
+- `ls -lSh /etc/ssh` — Lists files from largest to smallest and displays the actual size of the file. -h option to display human-readable file sizes
+- `ls -tl /etc/ssh` — -t option sorts files based on the time they were modified. It will list the most recently modified files first. It is important to remember that the modified date on directories represents the last time a file was added to or removed from the directory.
+- `ls -t --full-time /etc/ssh` — If the files in a directory were modified many days or months ago, it may be harder to tell exactly when they were modified, as only the date is provided for older files. For more detailed modification time information you can use the --full-time option to display the complete timestamp (including hours, minutes, seconds). It will assume the -l option automatically
+- `ls -lrS /etc/ssh` — -r option reverse sort the file based on file size smallest to largest
+- `ls -lrt /etc/ssh` — -t list files by modification date from newest to oldest, r option reveres it and displays from oldest to newest
+- `pwd` — Prints working directory
+- `pwd` — Prints the working directory
+- `pwd` — Prints the working directory i.e /home/sysadmin
+- `pwd` — Prints the working directory i.e /usr/share/doc
+- `ls` — Lists the files in Home Directory
+- `ls -a` — Displays all the files from the current directory including the hidden ones
+- `ls -l /etc/hosts` — Lists all the file attributes such as the size, ownership, or timestamps
+- `ls -R /etc/udev` — Recursively lists the files from all the subdirectories
+- `ls -d /etc/s*` — Lists all the directories that starts with s under /etc. * character can match "zero or more of any characters" in a filename. Note that the -d option prevents files from subdirectories from being displayed. It should always be used with the ls command when you are using file globbing
+- `ls -d /etc/????` — Displays all of the files in the /etc directory that are exactly four characters long.The ? character can be used to match exactly 1 character in a file name
+- `ls –d /etc/[abcd]*` — Displays all the directories that starts with letter a/b/c/d. By using square brackets [ ] you can specify a single character to match from a set of characters
+- `ls /etc/a*` — Lists the contents of the directory that starts with a
+- `ls /etc/adduser.conf` — Lists the filename ie adduser.conf
+- `ls -l /etc/adduser.conf` — Lists the filename ie adduser.conf with size, permissions, type, date, time etc.
+- `ls /etc/apparmor` — Lists the contents of the directory apparmor
+- `ls /etc/ap*` — Lists the contents of the directory that starts with ap
+- `ls /etc/x*` — Lists the contents of the directory that starts with x
+- `ls -d /etc/x*` — Lists the name of the directories that starts with x
+- `ls -l example.txt` — Lists the file atrributes of example.txt
+- `ls Videos` — Lists the files and folders in Videos directory
+- `ls Videos` — Lists the files and folders in Videos directory
+- `ls -l sample` — Lists the file attributes of sample file
+- `ls -l hosts` — Lists the file attributes of hosts file
+- `ls –l hosts` — Lists the file attributes of hosts file
+- `ls –l hosts newname` — Lists the file attributes of hosts file newname
+- `ls –l Myetc` — Lists the file attributes of Myetc
+- `ls –lR Myetc` — Recursively lists all the files and directories attributes of Myetc
+- `ls -l longfile*` — Lists the file attributes of longfile followed by any charcter/characters
+- `ls -l alpha_files.tar` — Lists the file attributes of alpha_files.tar
+- `ls -l alpha_files.tar.gz` — Lists the file attributes of alpha_files.tar.gz
+- `ls -l` — List the file attributes
+- `ls mybackups` — List the files and folders under mybackups
+- `ls –lh mybackups` — Lists the file attributes and size in human readable format
+- `ls` — Lists the files and folders in current directory
+- `ls etc` — Lists the files and folders in etc directory
+- `ls etc/udev` — Lists the files and folders in /etc/udev directory
+- `ls etc/udev/rules.d` — Lists the files and folders in /etc/udev/rules.d directory
+- `ls -l words` — Lists the file attributes of words directory
+- `ls -l words.gz` — Lists the file attributes of words.gz directory
+- `ls -l words.gz` — Lists the file attributes for words.gz
+- `ls -l words` — Lists the file attributes for words
+- `ls -l words.bz2` — Lists the file attributes for words.bz2
+- `ls -l words.bz2` — Lists the file attributes for words.bz2
+- `ls -l words` — Lists the file attributes for words
+- `ls -l words.xz` — Lists the file attributes for words.xz
+- `ls -l words.xz` — Lists the file attributes for words.xz
+- `ls -l words.zip` — Lists the file attributes for words.zip
+- `ls -l udev.zip` — Lists the file attributes for udev.zip
+- `ls /etc` — Lists /etc
+- `ls /etc` — head
+- `ls /etc/ssh` — nl
+- `ls /etc/ssh` — nl
+- `ls /etc/ssh` — tail -5
+- `ls /fake` — Lists the file and directories if present
+- `ls /fake > output.txt` — Lists the file and directories if present and output is redirected to output.txt
+- `ls /fake 2> error.txt` — Redirects the error to error.txt file
+- `ls /fake /etc/ppp` — Lists /fake and /etc/ppp if exists
+- `ls /fake /etc/ppp > example.txt` — Lists /fake and /etc/ppp if exists and writes to example.txt
+- `ls /fake /etc/ppp 2> error.txt` — Redirects the error to error.txt while listing
+- `ls /fake /etc/ppp &> all.txt` — Redirects the output and error to all.txt
+- `ls /fake /etc/ppp /junk /etc/sound &> all.txt` — Redirects the output and error to all.txt
+- `ls /fake /etc/ppp > example.txt 2> error.txt` — Redirects the output to example.txt and error to error.txt
+- `ls /etc/` — wc -l
+- `ls -l` — cut -c1-11,50-
+- `ls -l /etc` — more
+- `ls /etc` — tail -5
+- `cal` — Displays todays calendar
+- `ls -l sample.sh` — Lists the file attributes of sample.sh
+- `ls -l sample.sh` — Lists the file attributes of sample.sh
+- `lscpu` — Gives more details about the CPU
+- `lspci` — Displays all of the devices connected by pci bus
+- `lsusb` — Displays the devices connected to the system via USB
+- `ls /dev/sd*` — Lists the hard disks and its partitions
+- `lspci -k` — The-k option to show devices along with the kernel driver and modules used
+- `lsmod` — Displays the currently loaded modules
+- `ls /proc` — Lists the /proc directory
+- `ls /var/log` — List the files and directories from var/log. System logs are stored in the /var/log directory
+- `ls -l /etc/shadow` — Lists the file attributes of /etc/shadow file
+- `ls -l index.html` — Lists the file attributes of index.html
+- `ls -ld /home/jane` — Lists the directories with the attributes
+- `ls -ld /test/Jane` — Lists the directories with the attributes
+- `ls /home/jane` — List the contents of jane directory
+- `ls /var/spool/mail` — In addition, if the CREATE_MAIL_SPOOL is set to yes then the mail spool file /var/spool/mail/jane is created
+- `ls /home` — Finally, because the -m option is used, the /home/jane directory is created with permissions only permitting the jane user access, and the contents of the /etc/skel directory would be copied into the directory
+- `ls -l /tmp/filetest1` — Lists the file permissions for filetest1
+- `ls -la` — List all the files, directories and its attributes including the hidden ones
+- `ls -l /tmp/filetest2` — Lists the file permissions for filetest2
+- `ls -l sample` — Lists the file permissions for sample
+- `ls -l /etc/passwd` — Lists the file permissions for passwd file
+- `ls -l abc.txt` — Lists the file permissions of abc.txt
+- `ls -ld test-dir` — Lists the folder permissions for test-dir
+- `ls -l priv-dir` — Lists the files and its attributes for priv-dir
+- `ls -l pub-dir` — Lists the files and its attributes for pub-dir
+- `ls -ld priv-dir/` — Lists the directory and its permissions for priv-dir
+- `ls -ld pub-dir/` — Lists the attributes of the directory
+- `ls -l priv-dir/priv-file` — Lists the priv-file attributes
+- `ls -l pub-dir/pub-file` — Lists the pub-file attributes
+- `ls -l pub-dir/pub-file` — Lists the pub-file attributes
+- `ls -l test.sh` — Lists the file permissions for test.sh
+- `ls -ld pub-dir` — Lists the directory permissions
+- `ls -ld priv-dir` — Lists the directory permissions
+- `ls -l priv-dir/priv-file` — Lists the file permissions
+- `ls -l /etc/shadow` — Lists the permissions for the shadow file.
+- `ls -l /usr/bin/passwd` — Lists the file permissions
+- `ls -l /usr/bin/wall` — Lists the file permissions
+- `ls -l /dev/tty?` — Lists the file permissions
+- `ls -ld /tmp/data` — Lists the directory permissions
+- `ls -ld /tmp/data/file.txt` — Lists the directory permissions
+- `ls -ld /tmp` — Lists the permissions of directory
+- `ls -i /tmp/file.txt` — Displays the inode value for file.txt
+- `ls -li file.*` — Lists all the files with their inode numbers that starts with file
+- `ls -l /etc/grub.conf` — Lists the permissions of conf file
+- `ls -l mypasswd` — Lists the permissions of mypasswd file
+- `ls -l mytest.txt` — Lists the permissions of mytest.txt file
+- `ls -i file.original` — Lists the inode value for file.original
+- `ls -l mypasswd` — Lists the permissions of mypasswd file
+- `ls -l Linux.Kernel` — Lists the permissions of Linux.Kernel
+- `ls -l binary` — Lists the permissions of binary
+- `ls -ld /tmp` — Lists the permissions of the directory
+- `ls -ld /var/tmp` — Lists the permissions of the directory
+- `ls -l /usr/bin/passwd` — Lists the permissions for the passwd file.
+- `ls -l /usr/bin/wall` — Lists the permissions of the wall file
+- `ls -li source` — Displays the inode value and the permissions of the file
+- `ls -li source hardlink` — Lists the permissions and inode number for both source and hardlink
+- `ls -li hardlink hardlinktwo source` — Lists the permission snd inode number of hardlink hardlinktwo and source
+- `ls -li source` — Lists the inode number and permissions of the file.
+- `ls -li source softlink` — Lists the inode number and the file permissions
+- `ls -l crossdir` — Lists the file permissions
